@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --mint: #3ef0b4;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #070708;
+  color: #f4f4f2;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(62, 240, 180, 0.28);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #070708;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a30;
+  border-radius: 99px;
+  border: 2px solid #070708;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.mesh {
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(62, 240, 180, 0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(167, 139, 250, 0.14), transparent 50%),
+    radial-gradient(600px 400px at 50% 110%, rgba(62, 240, 180, 0.08), transparent 50%);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.text-gradient {
+  background: linear-gradient(110deg, #ffffff 0%, #3ef0b4 55%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: #3ef0b4;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition;
+}
+.btn-ghost:hover {
+  border-color: rgba(62, 240, 180, 0.5);
+  background: rgba(62, 240, 180, 0.08);
+}
+
+.card {
+  @apply rounded-3xl border border-white/10 bg-card/80 backdrop-blur;
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+  height: 1px;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: marquee 42s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+.live-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 999px;
+  border: 1px solid #3ef0b4;
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/30 focus:border-mint/50 focus:bg-white/[0.07];
+}
+
+select.field {
+  @apply bg-card;
+  color-scheme: dark;
+}
+
+.legal h2 {
+  @apply font-display mt-10 mb-3 text-2xl font-semibold text-white;
+}
+.legal h3 {
+  @apply mt-7 mb-2 text-lg font-semibold text-white;
+}
+.legal p,
+.legal li {
+  @apply text-[15px] leading-7 text-mute;
+}
+.legal ul {
+  @apply my-3 list-disc space-y-2 pl-5;
+}
+.legal a {
+  @apply text-mint underline decoration-mint/30 underline-offset-4;
+}
+
+.nav-blur {
+  background: rgba(7, 7, 8, 0.72);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
