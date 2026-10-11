@@ -18,9 +18,15 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {col.links.map((l) => (
                 <li key={l.to + l.label}>
-                  <Link to={l.to} className="text-sm text-mute transition hover:text-white">
-                    {l.label}
-                  </Link>
+                  {l.to.includes('#') ? (
+                    <a href={l.to} className="text-sm text-mute transition hover:text-white">
+                      {l.label}
+                    </a>
+                  ) : (
+                    <Link to={l.to} className="text-sm text-mute transition hover:text-white">
+                      {l.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

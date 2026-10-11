@@ -12,10 +12,20 @@ import Templates from './pages/services/Templates.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   useEffect(() => {
+    if (hash) {
+      const id = hash.replace('#', '')
+      const jump = () => {
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+      jump()
+      const t = setTimeout(jump, 80)
+      return () => clearTimeout(t)
+    }
     window.scrollTo(0, 0)
-  }, [pathname])
+  }, [pathname, hash])
   return null
 }
 

@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import Reveal from './Reveal.jsx'
 import Breadcrumbs from './Breadcrumbs.jsx'
+import DownloadButton from './DownloadButton.jsx'
 
 export default function ServicePage({ data, extraImage }) {
   return (
@@ -16,11 +17,9 @@ export default function ServicePage({ data, extraImage }) {
             </h1>
             <p className="mt-5 max-w-lg text-base leading-7 text-mute">{data.subtitle}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/contact" className="btn-primary">
-                Start for free
-              </Link>
+              <DownloadButton />
               <Link to="/contact" className="btn-ghost">
-                Talk to sales <ArrowRight size={16} />
+                Talk to us <ArrowRight size={16} />
               </Link>
             </div>
           </Reveal>
@@ -79,11 +78,9 @@ export default function ServicePage({ data, extraImage }) {
         <Reveal className="mx-auto max-w-site overflow-hidden rounded-[2rem] border border-white/10 px-8 py-14 text-center mesh">
           <h2 className="font-display text-3xl font-bold text-white md:text-4xl">Ready when you are.</h2>
           <p className="mx-auto mt-3 max-w-lg text-mute">
-            Open a project, drop in media, and ship. We will swap this call-to-action with your real offer.
+            Download CapCut, open a project, drop in media, and ship a cut without a learning curve.
           </p>
-          <Link to="/contact" className="btn-primary mt-7">
-            Get started
-          </Link>
+          <DownloadButton className="btn-primary mt-7" />
         </Reveal>
       </section>
     </>

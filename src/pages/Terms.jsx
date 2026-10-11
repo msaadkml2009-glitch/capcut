@@ -20,16 +20,16 @@ export default function Terms() {
 
           <h2>1. Agreement</h2>
           <p>
-            These Terms of Use (“Terms”) govern access to the NovaCut website and related marketing pages operated by{' '}
-            {brand.legalName} (“NovaCut,” “we,” “us”). By using the site you agree to these Terms. If you do not
+            These Terms of Use (“Terms”) govern access to this CapCut guide and related pages operated under{' '}
+            {brand.legalName} (“CapCut,” “we,” “us”). By using the site you agree to these Terms. If you do not
             agree, do not use the site.
           </p>
 
           <h2>2. The product</h2>
           <p>
-            NovaCut is an AI-powered photo and video editor offered through web and mobile applications. Descriptions
-            of features, plans, and availability on this marketing site are illustrative until you replace them with
-            final commercial terms. A separate product agreement may apply once an account is created.
+            CapCut is a free video editor offered through mobile, desktop and web applications by its publisher.
+            Descriptions of features, plans, and availability on this guide are for information. A separate product
+            agreement may apply once a CapCut account is created.
           </p>
 
           <h2>3. Accounts</h2>
@@ -50,7 +50,7 @@ export default function Terms() {
 
           <h2>5. Your content</h2>
           <p>
-            You retain rights in media you upload. You grant NovaCut a limited license to process that media solely to
+            You retain rights in media you upload. You grant CapCut a limited license to process that media solely to
             provide the editor, generate previews, and operate the service. We do not claim ownership of your projects.
             You represent that you have the rights needed to upload and process that media.
           </p>
@@ -58,7 +58,7 @@ export default function Terms() {
           <h2>6. AI output</h2>
           <p>
             Generated or auto-edited output may be imperfect. You are responsible for reviewing cuts, captions, and
-            images before publishing. NovaCut does not guarantee uniqueness, fitness for a particular campaign, or
+            images before publishing. CapCut does not guarantee uniqueness, fitness for a particular campaign, or
             that output is free of third-party rights.
           </p>
 
@@ -70,8 +70,8 @@ export default function Terms() {
 
           <h2>8. Intellectual property</h2>
           <p>
-            The NovaCut name, mark, interface, and documentation are owned by {brand.legalName}. You may not copy the
-            site design, scrape content, or use our marks without written permission.
+            The CapCut name, mark, interface, and documentation are owned by their respective rights holders. You may
+            not copy the site design, scrape content, or use those marks without written permission.
           </p>
 
           <h2>9. Disclaimers</h2>
@@ -91,7 +91,7 @@ export default function Terms() {
 
           <h2>11. Indemnity</h2>
           <p>
-            You will defend and indemnify NovaCut against claims arising from your content, your use of the service, or
+            You will defend and indemnify CapCut against claims arising from your content, your use of the service, or
             your violation of these Terms or of any third-party right.
           </p>
 
