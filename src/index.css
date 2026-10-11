@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -194,4 +195,72 @@ select.field {
   background: rgba(7, 7, 8, 0.72);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-box {
+  @apply rounded-3xl border p-6;
+}
+.info-ok {
+  border-color: rgba(62, 240, 180, 0.28);
+  background: rgba(62, 240, 180, 0.06);
+}
+.info-warn {
+  border-color: rgba(251, 191, 36, 0.32);
+  background: rgba(251, 191, 36, 0.06);
+}
+.info-danger {
+  border-color: rgba(248, 113, 113, 0.32);
+  background: rgba(248, 113, 113, 0.06);
+}
+.info-kicker {
+  @apply font-display text-lg font-semibold text-white;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(20, 20, 24, 0.8);
+}
+.pro-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+.pro-table th,
+.pro-table td {
+  padding: 0.95rem 1.1rem;
+  text-align: left;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+}
+.pro-table th {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(244, 244, 242, 0.55);
+  background: rgba(255, 255, 255, 0.03);
+}
+.pro-table td.is-key {
+  color: #fff;
+  font-weight: 600;
+  white-space: normal;
+}
+.pro-table th.is-accent,
+.pro-table td.is-accent {
+  background: rgba(62, 240, 180, 0.08);
+  color: #3ef0b4;
+  font-weight: 600;
+}
+.pro-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.025);
+}
+.pro-table tbody tr:hover td.is-accent {
+  background: rgba(62, 240, 180, 0.14);
+}
+.pro-table tbody tr:last-child td {
+  border-bottom: 0;
 }

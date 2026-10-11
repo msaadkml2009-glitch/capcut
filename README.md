@@ -1,10 +1,10 @@
-# NovaCut
+# CapCut
 
-Marketing site for an AI photo & video editor, structured like a modern CapCut-style product site.
+Marketing site and guide for the CapCut video editor — free download, templates, AI tools, captions and 4K export.
 
 ## Pages
 
-- `/` — Landing page with classic hero
+- `/` — Home: download, how to use CapCut, templates, AI, pricing, comparison
 - `/services/video-studio` — Video Studio
 - `/services/image-studio` — Image Studio
 - `/services/templates` — Templates
@@ -13,9 +13,9 @@ Marketing site for an AI photo & video editor, structured like a modern CapCut-s
 - `/terms` — Terms & Conditions
 - `/privacy` — Privacy Policy
 
-## Swap your copy
+## Copy
 
-All visible copy lives in `src/content.js`. Replace headlines, services, and legal intros there.
+Visible copy lives in `src/content.js`.
 
 ## Run locally
 

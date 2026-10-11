@@ -22,7 +22,7 @@ export default function About() {
         <Reveal className="mx-auto max-w-site overflow-hidden rounded-[1.8rem] border border-white/10">
           <img
             src="/images/about-studio.jpg"
-            alt="NovaCut creative studio"
+            alt="CapCut creative studio"
             className="h-[280px] w-full object-cover md:h-[520px]"
           />
         </Reveal>

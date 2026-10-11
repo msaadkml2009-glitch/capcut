@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Logo from './Logo.jsx'
+import DownloadButton from './DownloadButton.jsx'
 import { nav } from '../content.js'
 
 const services = [
@@ -102,9 +103,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Link to={nav.cta.to} className="btn-primary !px-5 !py-2.5">
-            {nav.cta.label}
-          </Link>
+          <DownloadButton className="btn-primary !px-5 !py-2.5" />
         </div>
 
         <button
@@ -136,9 +135,7 @@ export default function Navbar() {
                   {l.label}
                 </Link>
               ))}
-            <Link to={nav.cta.to} className="btn-primary mt-3">
-              {nav.cta.label}
-            </Link>
+            <DownloadButton className="btn-primary mt-3" />
           </div>
         </div>
       )}

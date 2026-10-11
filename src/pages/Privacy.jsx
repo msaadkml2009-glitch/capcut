@@ -20,15 +20,16 @@ export default function Privacy() {
 
           <h2>1. Who we are</h2>
           <p>
-            {brand.legalName} (“NovaCut,” “we,” “us”) operates this website and the NovaCut editor. For privacy
-            questions, visit our <Link to="/contact">Contact</Link> page.
+            {brand.legalName} (“CapCut,” “we,” “us”) operates this guide website. For privacy questions about this
+            site, visit our <Link to="/contact">Contact</Link> page. The CapCut application has its own publisher
+            privacy policy.
           </p>
 
           <h2>2. Information we collect</h2>
           <h3>Information you provide</h3>
           <ul>
             <li>Name, email, company, and message content from the contact form.</li>
-            <li>Account details if you create a NovaCut workspace (when the product is wired in).</li>
+            <li>Account details if you create a CapCut workspace (when the product is wired in).</li>
             <li>Media you upload to the editor — processed to provide the service.</li>
           </ul>
           <h3>Information collected automatically</h3>
