@@ -19,12 +19,7 @@ export default function Footer() {
               {col.links.map((l) => (
                 <li key={l.to + l.label}>
                   {l.to.startsWith('http') ? (
-                    <a
-                      href={l.to}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-mute transition hover:text-white"
-                    >
+                    <a href={l.to} className="text-sm text-mute transition hover:text-white">
                       {l.label}
                     </a>
                   ) : l.to.includes('#') ? (

@@ -226,7 +226,7 @@ function Downloads() {
               </div>
               <h3 className="font-display mt-4 text-xl font-semibold text-white">{item.name}</h3>
               <p className="mt-2 flex-1 text-sm leading-6 text-mute">{item.text}</p>
-              <a href={downloadUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 !py-2.5 text-sm">
+              <a href={downloadUrl} download className="btn-primary mt-5 !py-2.5 text-sm">
                 <Download size={14} />
                 {item.cta}
               </a>
