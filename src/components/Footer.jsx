@@ -18,7 +18,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {col.links.map((l) => (
                 <li key={l.to + l.label}>
-                  {l.to.includes('#') ? (
+                  {l.to.startsWith('http') ? (
+                    <a href={l.to} className="text-sm text-mute transition hover:text-white">
+                      {l.label}
+                    </a>
+                  ) : l.to.includes('#') ? (
                     <a href={l.to} className="text-sm text-mute transition hover:text-white">
                       {l.label}
                     </a>
