@@ -1,3 +1,6 @@
+export const downloadUrl =
+  'https://www.dropbox.com/scl/fi/olsm3upo2x8lj2okmd2ri/CapCut-Video-Editor_19.7.0_APKPure.apk?rlkey=cr1plzto9ujgkvk35n4jlpv3a&st=zf6jhfwj&dl=0'
+
 export const brand = {
   name: 'CapCut',
   legalName: 'CapCut',
@@ -13,7 +16,7 @@ export const nav = {
     { label: 'About', to: '/about' },
     { label: 'Contact', to: '/contact' },
   ],
-  cta: { label: 'Download', to: '/#download' },
+  cta: { label: 'Download', to: downloadUrl },
 }
 
 export const home = {
@@ -22,7 +25,7 @@ export const home = {
     title: 'CapCut Video Editor: Free Download, Templates & AI Tools',
     subtitle:
       'Download the CapCut app at no cost on the phone, PC, Mac or web. Templates, AI tools, captions, export in 4K, Pro pricing and step-by-step instructions on how to use CapCut.',
-    primary: { label: 'Download', to: '/#download' },
+    primary: { label: 'Download', to: downloadUrl },
     secondary: { label: 'How to use CapCut', to: '/#howto' },
     note: 'Official stores · 4K export · Templates · Auto captions',
     stats: [
@@ -114,7 +117,7 @@ export const home = {
         name: 'CapCut APK',
         tag: 'Caution',
         text: 'People search CapCut APK download when the app is missing from their store or the phone is outdated. An APK is just an Android installer — unknown sites can alter it.',
-        cta: 'Read APK rules',
+        cta: 'Download APK',
       },
     ],
     apkRules: [
@@ -374,7 +377,7 @@ export const home = {
     title: 'Download CapCut and cut something today.',
     subtitle:
       'Start with the free video editing tools. Make a 60-second clip from a template, add captions, and export to 1080p. Then try keyframes, speed curves and green screen — and CapCut Pro only if you need it.',
-    primary: { label: 'Download', to: '/#download' },
+    primary: { label: 'Download', to: downloadUrl },
     secondary: { label: 'Read the guide', to: '/#howto' },
   },
 }
@@ -487,7 +490,7 @@ export const footer = {
     {
       title: 'Product',
       links: [
-        { label: 'Download CapCut', to: '/#download' },
+        { label: 'Download CapCut', to: downloadUrl },
         { label: 'Video Studio', to: '/services/video-studio' },
         { label: 'Image Studio', to: '/services/image-studio' },
         { label: 'Templates', to: '/services/templates' },
