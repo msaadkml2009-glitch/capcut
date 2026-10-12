@@ -1,5 +1,5 @@
 export const downloadUrl =
-  'https://www.dropbox.com/scl/fi/olsm3upo2x8lj2okmd2ri/CapCut-Video-Editor_19.7.0_APKPure.apk?rlkey=cr1plzto9ujgkvk35n4jlpv3a&st=nfxmc4nm&dl=1'
+  'https://www.dropbox.com/scl/fi/olsm3upo2x8lj2okmd2ri/CapCut-Video-Editor_19.7.0_APKPure.apk?rlkey=cr1plzto9ujgkvk35n4jlpv3a&st=nr0qr2c9&dl=1'
 
 export const brand = {
   name: 'CapCut',
